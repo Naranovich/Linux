@@ -1,0 +1,104 @@
+nikita@nikita-VirtualBox:~$ sudo apt purge nginx
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Пакет «nginx» не установлен, поэтому не может быть удалён
+Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 141 пакетов не обновлено.
+nikita@nikita-VirtualBox:~$ curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor \
+    | sudo tee /usr/share/keyrings/nginx-archive-keyring.gpg >/dev/null
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1561  100  1561    0     0   1559      0  0:00:01  0:00:01 --:--:--  1561
+nikita@nikita-VirtualBox:~$ sudo apt update
+sudo apt install nginx
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease             
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease           
+Сущ:4 http://security.ubuntu.com/ubuntu jammy-security InRelease              
+Чтение списков пакетов… Готово            
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Может быть обновлён 141 пакет. Запустите «apt list --upgradable» для показа.
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Будут установлены следующие дополнительные пакеты:
+  libnginx-mod-http-geoip2 libnginx-mod-http-image-filter
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
+  libnginx-mod-stream-geoip2 nginx-common nginx-core
+Предлагаемые пакеты:
+  fcgiwrap nginx-doc
+Следующие НОВЫЕ пакеты будут установлены:
+  libnginx-mod-http-geoip2 libnginx-mod-http-image-filter
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
+  libnginx-mod-stream-geoip2 nginx nginx-common nginx-core
+Обновлено 0 пакетов, установлено 9 новых пакетов, для удаления отмечено 0 пакетов, и 141 пакетов не обновлено.
+Необходимо скачать 696 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 2 395 kB.
+Хотите продолжить? [Д/н] д
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx-common all 1.18.0-6ubuntu14.3 [40,0 kB]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-geoip2 amd64 1.18.0-6ubuntu14.3 [11,9 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-image-filter amd64 1.18.0-6ubuntu14.3 [15,4 kB]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.18.0-6ubuntu14.3 [13,7 kB]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-mail amd64 1.18.0-6ubuntu14.3 [45,7 kB]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-stream amd64 1.18.0-6ubuntu14.3 [72,8 kB]
+Пол:7 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-stream-geoip2 amd64 1.18.0-6ubuntu14.3 [10,1 kB]
+Пол:8 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx-core amd64 1.18.0-6ubuntu14.3 [482 kB]
+Пол:9 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx amd64 1.18.0-6ubuntu14.3 [3 882 B]
+Получено 696 kB за 1с (907 kB/s)    
+Предварительная настройка пакетов …
+Выбор ранее не выбранного пакета nginx-common.
+(Чтение базы данных … на данный момент установлено 177913 файлов и каталогов.)
+Подготовка к распаковке …/0-nginx-common_1.18.0-6ubuntu14.3_all.deb …
+Распаковывается nginx-common (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета libnginx-mod-http-geoip2.
+Подготовка к распаковке …/1-libnginx-mod-http-geoip2_1.18.0-6ubuntu14.3_amd64.d
+eb …
+Распаковывается libnginx-mod-http-geoip2 (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета libnginx-mod-http-image-filter.
+Подготовка к распаковке …/2-libnginx-mod-http-image-filter_1.18.0-6ubuntu14.3_a
+md64.deb …
+Распаковывается libnginx-mod-http-image-filter (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета libnginx-mod-http-xslt-filter.
+Подготовка к распаковке …/3-libnginx-mod-http-xslt-filter_1.18.0-6ubuntu14.3_am
+d64.deb …
+Распаковывается libnginx-mod-http-xslt-filter (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета libnginx-mod-mail.
+Подготовка к распаковке …/4-libnginx-mod-mail_1.18.0-6ubuntu14.3_amd64.deb …
+Распаковывается libnginx-mod-mail (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета libnginx-mod-stream.
+Подготовка к распаковке …/5-libnginx-mod-stream_1.18.0-6ubuntu14.3_amd64.deb …
+Распаковывается libnginx-mod-stream (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета libnginx-mod-stream-geoip2.
+Подготовка к распаковке …/6-libnginx-mod-stream-geoip2_1.18.0-6ubuntu14.3_amd64
+.deb …
+Распаковывается libnginx-mod-stream-geoip2 (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета nginx-core.
+Подготовка к распаковке …/7-nginx-core_1.18.0-6ubuntu14.3_amd64.deb …
+Распаковывается nginx-core (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета nginx.
+Подготовка к распаковке …/8-nginx_1.18.0-6ubuntu14.3_amd64.deb …
+Распаковывается nginx (1.18.0-6ubuntu14.3) …
+Настраивается пакет nginx-common (1.18.0-6ubuntu14.3) …
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /li
+b/systemd/system/nginx.service.
+Настраивается пакет libnginx-mod-http-xslt-filter (1.18.0-6ubuntu14.3) …
+Настраивается пакет libnginx-mod-http-geoip2 (1.18.0-6ubuntu14.3) …
+Настраивается пакет libnginx-mod-mail (1.18.0-6ubuntu14.3) …
+Настраивается пакет libnginx-mod-http-image-filter (1.18.0-6ubuntu14.3) …
+Настраивается пакет libnginx-mod-stream (1.18.0-6ubuntu14.3) …
+Настраивается пакет libnginx-mod-stream-geoip2 (1.18.0-6ubuntu14.3) …
+Настраивается пакет nginx-core (1.18.0-6ubuntu14.3) …
+ * Upgrading binary nginx                                               [ OK ] 
+Настраивается пакет nginx (1.18.0-6ubuntu14.3) …
+Обрабатываются триггеры для man-db (2.10.2-1) …
+Обрабатываются триггеры для ufw (0.36.1-4build1) …
+nikita@nikita-VirtualBox:~$ ^[[200~sudo dpkg -P nginx~
+sudo: команда не найдена
+nikita@nikita-VirtualBox:~$ sudo dpkg -P nginx
+(Чтение базы данных … на данный момент установлен 178001 файл и каталог.)
+Удаляется nginx (1.18.0-6ubuntu14.3) …
+nikita@nikita-VirtualBox:~$ sudo snap install robomongo
+robomongo 0.9.0-rc9 от Francesco Banconi (frankban) установлен
+nikita@nikita-VirtualBox:~$
+
