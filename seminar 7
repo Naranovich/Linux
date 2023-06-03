@@ -1,0 +1,617 @@
+nikita@nikita-VirtualBox:~$ sudo apt install nginx -y
+[sudo] пароль для nikita: 
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Будут установлены следующие дополнительные пакеты:
+  libnginx-mod-http-geoip2 libnginx-mod-http-image-filter
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
+  libnginx-mod-stream-geoip2 nginx-common nginx-core
+Предлагаемые пакеты:
+  fcgiwrap nginx-doc
+Следующие НОВЫЕ пакеты будут установлены:
+  libnginx-mod-http-geoip2 libnginx-mod-http-image-filter
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
+  libnginx-mod-stream-geoip2 nginx nginx-common nginx-core
+Обновлено 0 пакетов, установлено 9 новых пакетов, для удаления отмечено 0 пакетов, и 151 пакетов не обновлено.
+Необходимо скачать 696 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 2 395 kB.
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx-common all 1.18.0-6ubuntu14.3 [40,0 kB]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-geoip2 amd64 1.18.0-6ubuntu14.3 [11,9 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-image-filter amd64 1.18.0-6ubuntu14.3 [15,4 kB]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.18.0-6ubuntu14.3 [13,7 kB]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-mail amd64 1.18.0-6ubuntu14.3 [45,7 kB]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-stream amd64 1.18.0-6ubuntu14.3 [72,8 kB]
+Пол:7 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libnginx-mod-stream-geoip2 amd64 1.18.0-6ubuntu14.3 [10,1 kB]
+Пол:8 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx-core amd64 1.18.0-6ubuntu14.3 [482 kB]
+Пол:9 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx amd64 1.18.0-6ubuntu14.3 [3 882 B]
+Получено 696 kB за 3с (210 kB/s)           
+Предварительная настройка пакетов …
+Выбор ранее не выбранного пакета nginx-common.
+(Чтение базы данных … на данный момент установлено 177887 файлов и каталогов.)
+Подготовка к распаковке …/0-nginx-common_1.18.0-6ubuntu14.3_all.deb …
+Распаковывается nginx-common (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета libnginx-mod-http-geoip2.
+Подготовка к распаковке …/1-libnginx-mod-http-geoip2_1.18.0-6ubuntu14.3_amd64.de
+b …
+Распаковывается libnginx-mod-http-geoip2 (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета libnginx-mod-http-image-filter.
+Подготовка к распаковке …/2-libnginx-mod-http-image-filter_1.18.0-6ubuntu14.3_am
+d64.deb …
+Распаковывается libnginx-mod-http-image-filter (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета libnginx-mod-http-xslt-filter.
+Подготовка к распаковке …/3-libnginx-mod-http-xslt-filter_1.18.0-6ubuntu14.3_amd
+64.deb …
+Распаковывается libnginx-mod-http-xslt-filter (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета libnginx-mod-mail.
+Подготовка к распаковке …/4-libnginx-mod-mail_1.18.0-6ubuntu14.3_amd64.deb …
+Распаковывается libnginx-mod-mail (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета libnginx-mod-stream.
+Подготовка к распаковке …/5-libnginx-mod-stream_1.18.0-6ubuntu14.3_amd64.deb …
+Распаковывается libnginx-mod-stream (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета libnginx-mod-stream-geoip2.
+Подготовка к распаковке …/6-libnginx-mod-stream-geoip2_1.18.0-6ubuntu14.3_amd64.
+deb …
+Распаковывается libnginx-mod-stream-geoip2 (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета nginx-core.
+Подготовка к распаковке …/7-nginx-core_1.18.0-6ubuntu14.3_amd64.deb …
+Распаковывается nginx-core (1.18.0-6ubuntu14.3) …
+Выбор ранее не выбранного пакета nginx.
+Подготовка к распаковке …/8-nginx_1.18.0-6ubuntu14.3_amd64.deb …
+Распаковывается nginx (1.18.0-6ubuntu14.3) …
+Настраивается пакет nginx-common (1.18.0-6ubuntu14.3) …
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib
+/systemd/system/nginx.service.
+Настраивается пакет libnginx-mod-http-xslt-filter (1.18.0-6ubuntu14.3) …
+Настраивается пакет libnginx-mod-http-geoip2 (1.18.0-6ubuntu14.3) …
+Настраивается пакет libnginx-mod-mail (1.18.0-6ubuntu14.3) …
+Настраивается пакет libnginx-mod-http-image-filter (1.18.0-6ubuntu14.3) …
+Настраивается пакет libnginx-mod-stream (1.18.0-6ubuntu14.3) …
+Настраивается пакет libnginx-mod-stream-geoip2 (1.18.0-6ubuntu14.3) …
+Настраивается пакет nginx-core (1.18.0-6ubuntu14.3) …
+ * Upgrading binary nginx                                                [ OK ] 
+Настраивается пакет nginx (1.18.0-6ubuntu14.3) …
+Обрабатываются триггеры для man-db (2.10.2-1) …
+Обрабатываются триггеры для ufw (0.36.1-4build1) …
+nikita@nikita-VirtualBox:~$ /var/www/html$ sudo apt install php-fpm
+bash: /var/www/html$: Нет такого файла или каталога
+nikita@nikita-VirtualBox:~$ sudo apt install php-fpm
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Будут установлены следующие дополнительные пакеты:
+  php-common php8.1-cli php8.1-common php8.1-fpm php8.1-opcache
+  php8.1-readline
+Предлагаемые пакеты:
+  php-pear
+Следующие НОВЫЕ пакеты будут установлены:
+  php-common php-fpm php8.1-cli php8.1-common php8.1-fpm php8.1-opcache
+  php8.1-readline
+Обновлено 0 пакетов, установлено 7 новых пакетов, для удаления отмечено 0 пакетов, и 151 пакетов не обновлено.
+Необходимо скачать 5 193 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 21,5 MB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 php-common all 2:92ubuntu1 [12,4 kB]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 php8.1-common amd64 8.1.2-1ubuntu2.11 [1 126 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 php8.1-opcache amd64 8.1.2-1ubuntu2.11 [365 kB]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 php8.1-readline amd64 8.1.2-1ubuntu2.11 [13,5 kB]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 php8.1-cli amd64 8.1.2-1ubuntu2.11 [1 833 kB]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 php8.1-fpm amd64 8.1.2-1ubuntu2.11 [1 840 kB]
+Пол:7 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 php-fpm all 2:8.1+92ubuntu1 [2 838 B]
+Получено 5 193 kB за 7с (706 kB/s)                                             
+Выбор ранее не выбранного пакета php-common.
+(Чтение базы данных … на данный момент установлено 177975 файлов и каталогов.)
+Подготовка к распаковке …/0-php-common_2%3a92ubuntu1_all.deb …
+Распаковывается php-common (2:92ubuntu1) …
+Выбор ранее не выбранного пакета php8.1-common.
+Подготовка к распаковке …/1-php8.1-common_8.1.2-1ubuntu2.11_amd64.deb …
+Распаковывается php8.1-common (8.1.2-1ubuntu2.11) …
+Выбор ранее не выбранного пакета php8.1-opcache.
+Подготовка к распаковке …/2-php8.1-opcache_8.1.2-1ubuntu2.11_amd64.deb …
+Распаковывается php8.1-opcache (8.1.2-1ubuntu2.11) …
+Выбор ранее не выбранного пакета php8.1-readline.
+Подготовка к распаковке …/3-php8.1-readline_8.1.2-1ubuntu2.11_amd64.deb …
+Распаковывается php8.1-readline (8.1.2-1ubuntu2.11) …
+Выбор ранее не выбранного пакета php8.1-cli.
+Подготовка к распаковке …/4-php8.1-cli_8.1.2-1ubuntu2.11_amd64.deb …
+Распаковывается php8.1-cli (8.1.2-1ubuntu2.11) …
+Выбор ранее не выбранного пакета php8.1-fpm.
+Подготовка к распаковке …/5-php8.1-fpm_8.1.2-1ubuntu2.11_amd64.deb …
+Распаковывается php8.1-fpm (8.1.2-1ubuntu2.11) …
+Выбор ранее не выбранного пакета php-fpm.
+Подготовка к распаковке …/6-php-fpm_2%3a8.1+92ubuntu1_all.deb …
+Распаковывается php-fpm (2:8.1+92ubuntu1) …
+Настраивается пакет php-common (2:92ubuntu1) …
+Created symlink /etc/systemd/system/timers.target.wants/phpsessionclean.timer → 
+/lib/systemd/system/phpsessionclean.timer.
+Настраивается пакет php8.1-common (8.1.2-1ubuntu2.11) …
+
+Creating config file /etc/php/8.1/mods-available/calendar.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/ctype.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/exif.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/fileinfo.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/ffi.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/ftp.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/gettext.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/iconv.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/pdo.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/phar.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/posix.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/shmop.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/sockets.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/sysvmsg.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/sysvsem.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/sysvshm.ini with new version
+
+Creating config file /etc/php/8.1/mods-available/tokenizer.ini with new version
+Настраивается пакет php8.1-readline (8.1.2-1ubuntu2.11) …
+
+Creating config file /etc/php/8.1/mods-available/readline.ini with new version
+Настраивается пакет php8.1-opcache (8.1.2-1ubuntu2.11) …
+
+Creating config file /etc/php/8.1/mods-available/opcache.ini with new version
+Настраивается пакет php8.1-cli (8.1.2-1ubuntu2.11) …
+update-alternatives: используется /usr/bin/php8.1 для предоставления /usr/bin/ph
+p (php) в автоматическом режиме
+update-alternatives: используется /usr/bin/phar8.1 для предоставления /usr/bin/p
+har (phar) в автоматическом режиме
+update-alternatives: используется /usr/bin/phar.phar8.1 для предоставления /usr/
+bin/phar.phar (phar.phar) в автоматическом режиме
+
+Creating config file /etc/php/8.1/cli/php.ini with new version
+Настраивается пакет php8.1-fpm (8.1.2-1ubuntu2.11) …
+
+Creating config file /etc/php/8.1/fpm/php.ini with new version
+Created symlink /etc/systemd/system/multi-user.target.wants/php8.1-fpm.service →
+ /lib/systemd/system/php8.1-fpm.service.
+Настраивается пакет php-fpm (2:8.1+92ubuntu1) …
+Обрабатываются триггеры для man-db (2.10.2-1) …
+Обрабатываются триггеры для php8.1-cli (8.1.2-1ubuntu2.11) …
+Обрабатываются триггеры для php8.1-fpm (8.1.2-1ubuntu2.11) …
+nikita@nikita-VirtualBox:~$ cd /etc/php/8.1
+nikita@nikita-VirtualBox:/etc/php/8.1$  ll
+итого 20
+drwxr-xr-x 5 root root 4096 июн  3 22:43 ./
+drwxr-xr-x 3 root root 4096 июн  3 22:43 ../
+drwxr-xr-x 3 root root 4096 июн  3 22:43 cli/
+drwxr-xr-x 4 root root 4096 июн  3 22:43 fpm/
+drwxr-xr-x 2 root root 4096 июн  3 22:43 mods-available/
+nikita@nikita-VirtualBox:/etc/php/8.1$ cd fpm/pool.d/
+nikita@nikita-VirtualBox:/etc/php/8.1/fpm/pool.d$ ll
+итого 32
+drwxr-xr-x 2 root root  4096 июн  3 22:43 ./
+drwxr-xr-x 4 root root  4096 июн  3 22:43 ../
+-rw-r--r-- 1 root root 20876 фев 23 01:56 www.conf
+nikita@nikita-VirtualBox:/etc/php/8.1/fpm/pool.d$ nano www.conf
+nikita@nikita-VirtualBox:/etc/php/8.1/fpm/pool.d$ cd /etc/nginx
+nikita@nikita-VirtualBox:/etc/nginx$ sudo nano sites-enabled/default
+nikita@nikita-VirtualBox:/etc/nginx$ sudo systemctl reload nginx
+nikita@nikita-VirtualBox:/etc/nginx$ cd
+nikita@nikita-VirtualBox:~$ sudo apt install apache2 -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Будут установлены следующие дополнительные пакеты:
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.3-0
+Предлагаемые пакеты:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser
+Следующие НОВЫЕ пакеты будут установлены:
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.3-0
+Обновлено 0 пакетов, установлено 9 новых пакетов, для удаления отмечено 0 пакетов, и 151 пакетов не обновлено.
+Необходимо скачать 2 057 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 8 216 kB.
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libapr1 amd64 1.7.0-8ubuntu0.22.04.1 [108 kB]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libaprutil1 amd64 1.6.1-5ubuntu4.22.04.1 [92,6 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.1-5ubuntu4.22.04.1 [11,3 kB]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libaprutil1-ldap amd64 1.6.1-5ubuntu4.22.04.1 [9 168 B]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 liblua5.3-0 amd64 5.3.6-1build1 [140 kB]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2-bin amd64 2.4.52-1ubuntu4.5 [1 345 kB]
+Пол:7 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2-data all 2.4.52-1ubuntu4.5 [165 kB]
+Пол:8 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2-utils amd64 2.4.52-1ubuntu4.5 [89,1 kB]
+Пол:9 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 apache2 amd64 2.4.52-1ubuntu4.5 [97,8 kB]
+Получено 2 057 kB за 17с (124 kB/s)                                            
+Выбор ранее не выбранного пакета libapr1:amd64.
+(Чтение базы данных … на данный момент установлено 178114 файлов и каталогов.)
+Подготовка к распаковке …/0-libapr1_1.7.0-8ubuntu0.22.04.1_amd64.deb …
+Распаковывается libapr1:amd64 (1.7.0-8ubuntu0.22.04.1) …
+Выбор ранее не выбранного пакета libaprutil1:amd64.
+Подготовка к распаковке …/1-libaprutil1_1.6.1-5ubuntu4.22.04.1_amd64.deb …
+Распаковывается libaprutil1:amd64 (1.6.1-5ubuntu4.22.04.1) …
+Выбор ранее не выбранного пакета libaprutil1-dbd-sqlite3:amd64.
+Подготовка к распаковке …/2-libaprutil1-dbd-sqlite3_1.6.1-5ubuntu4.22.04.1_amd64
+.deb …
+Распаковывается libaprutil1-dbd-sqlite3:amd64 (1.6.1-5ubuntu4.22.04.1) …
+Выбор ранее не выбранного пакета libaprutil1-ldap:amd64.
+Подготовка к распаковке …/3-libaprutil1-ldap_1.6.1-5ubuntu4.22.04.1_amd64.deb …
+Распаковывается libaprutil1-ldap:amd64 (1.6.1-5ubuntu4.22.04.1) …
+Выбор ранее не выбранного пакета liblua5.3-0:amd64.
+Подготовка к распаковке …/4-liblua5.3-0_5.3.6-1build1_amd64.deb …
+Распаковывается liblua5.3-0:amd64 (5.3.6-1build1) …
+Выбор ранее не выбранного пакета apache2-bin.
+Подготовка к распаковке …/5-apache2-bin_2.4.52-1ubuntu4.5_amd64.deb …
+Распаковывается apache2-bin (2.4.52-1ubuntu4.5) …
+Выбор ранее не выбранного пакета apache2-data.
+Подготовка к распаковке …/6-apache2-data_2.4.52-1ubuntu4.5_all.deb …
+Распаковывается apache2-data (2.4.52-1ubuntu4.5) …
+Выбор ранее не выбранного пакета apache2-utils.
+Подготовка к распаковке …/7-apache2-utils_2.4.52-1ubuntu4.5_amd64.deb …
+Распаковывается apache2-utils (2.4.52-1ubuntu4.5) …
+Выбор ранее не выбранного пакета apache2.
+Подготовка к распаковке …/8-apache2_2.4.52-1ubuntu4.5_amd64.deb …
+Распаковывается apache2 (2.4.52-1ubuntu4.5) …
+Настраивается пакет libapr1:amd64 (1.7.0-8ubuntu0.22.04.1) …
+Настраивается пакет liblua5.3-0:amd64 (5.3.6-1build1) …
+Настраивается пакет apache2-data (2.4.52-1ubuntu4.5) …
+Настраивается пакет libaprutil1:amd64 (1.6.1-5ubuntu4.22.04.1) …
+Настраивается пакет libaprutil1-ldap:amd64 (1.6.1-5ubuntu4.22.04.1) …
+Настраивается пакет libaprutil1-dbd-sqlite3:amd64 (1.6.1-5ubuntu4.22.04.1) …
+Настраивается пакет apache2-utils (2.4.52-1ubuntu4.5) …
+Настраивается пакет apache2-bin (2.4.52-1ubuntu4.5) …
+Настраивается пакет apache2 (2.4.52-1ubuntu4.5) …
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /l
+ib/systemd/system/apache2.service.
+Could not execute systemctl:  at /usr/bin/deb-systemd-invoke line 142.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.
+service → /lib/systemd/system/apache-htcacheclean.service.
+Обрабатываются триггеры для ufw (0.36.1-4build1) …
+Обрабатываются триггеры для man-db (2.10.2-1) …
+Обрабатываются триггеры для libc-bin (2.35-0ubuntu3.1) …
+nikita@nikita-VirtualBox:~$ d /var/www/html
+d: команда не найдена
+nikita@nikita-VirtualBox:~$ cd /var/www/html
+nikita@nikita-VirtualBox:/var/www/html$ ll
+итого 24
+drwxr-xr-x 2 root root  4096 июн  3 22:48 ./
+drwxr-xr-x 3 root root  4096 июн  3 22:41 ../
+-rw-r--r-- 1 root root 10671 июн  3 22:48 index.html
+-rw-r--r-- 1 root root   612 июн  3 22:41 index.nginx-debian.html
+nikita@nikita-VirtualBox:/var/www/html$ sudo su
+root@nikita-VirtualBox:/var/www/html# cat info.php
+cat: info.php: Нет такого файла или каталога
+root@nikita-VirtualBox:/var/www/html# nano info.php
+root@nikita-VirtualBox:/var/www/html# exit
+exit
+nikita@nikita-VirtualBox:/var/www/html$ cd
+nikita@nikita-VirtualBox:~$ cd /etc/apache2/
+nikita@nikita-VirtualBox:/etc/apache2$ sudo nano ports.conf
+nikita@nikita-VirtualBox:/etc/apache2$ sudo cat ports.conf
+# If you just change the port or add more ports here, you will likely also
+# have to change the VirtualHost statement in
+# /etc/apache2/sites-enabled/000-default.conf
+
+Listen 9000
+
+<IfModule ssl_module>
+	Listen 443
+</IfModule>
+
+<IfModule mod_gnutls.c>
+	Listen 443
+</IfModule>
+
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+nikita@nikita-VirtualBox:/etc/apache2$ cd /var/www/html
+nikita@nikita-VirtualBox:/var/www/html$ ll
+итого 28
+drwxr-xr-x 2 root root  4096 июн  3 22:50 ./
+drwxr-xr-x 3 root root  4096 июн  3 22:41 ../
+-rw-r--r-- 1 root root 10671 июн  3 22:48 index.html
+-rw-r--r-- 1 root root   612 июн  3 22:41 index.nginx-debian.html
+-rw-r--r-- 1 root root    14 июн  3 22:50 info.php
+nikita@nikita-VirtualBox:/var/www/html$ sudo su
+root@nikita-VirtualBox:/var/www/html# nano info.php
+root@nikita-VirtualBox:/var/www/html# exit
+exit
+nikita@nikita-VirtualBox:/var/www/html$ sudo ss -ntlp
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    Process                                                                         
+LISTEN    0         511                0.0.0.0:80               0.0.0.0:*        users:(("nginx",pid=11733,fd=6),("nginx",pid=11732,fd=6),("nginx",pid=11731,fd=6),("nginx",pid=11730,fd=6),("nginx",pid=11729,fd=6),("nginx",pid=11728,fd=6),("nginx",pid=11727,fd=6),("nginx",pid=11726,fd=6),("nginx",pid=11725,fd=6),("nginx",pid=11724,fd=6),("nginx",pid=3718,fd=6))
+LISTEN    0         4096         127.0.0.53%lo:53               0.0.0.0:*        users:(("systemd-resolve",pid=563,fd=14))                                      
+LISTEN    0         128              127.0.0.1:631              0.0.0.0:*        users:(("cupsd",pid=811,fd=7))                                                 
+LISTEN    0         511                   [::]:80                  [::]:*        users:(("nginx",pid=11733,fd=7),("nginx",pid=11732,fd=7),("nginx",pid=11731,fd=7),("nginx",pid=11730,fd=7),("nginx",pid=11729,fd=7),("nginx",pid=11728,fd=7),("nginx",pid=11727,fd=7),("nginx",pid=11726,fd=7),("nginx",pid=11725,fd=7),("nginx",pid=11724,fd=7),("nginx",pid=3718,fd=7))
+LISTEN    0         128                  [::1]:631                 [::]:*        users:(("cupsd",pid=811,fd=6))                                                 
+nikita@nikita-VirtualBox:/var/www/html$ sudo apt install mysql-server -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Будут установлены следующие дополнительные пакеты:
+  libaio1 libcgi-fast-perl libcgi-pm-perl libevent-core-2.1-7
+  libevent-pthreads-2.1-7 libfcgi-bin libfcgi-perl libfcgi0ldbl
+  libhtml-template-perl libmecab2 libprotobuf-lite23 mecab-ipadic
+  mecab-ipadic-utf8 mecab-utils mysql-client-8.0 mysql-client-core-8.0
+  mysql-common mysql-server-8.0 mysql-server-core-8.0
+Предлагаемые пакеты:
+  libipc-sharedcache-perl mailx tinyca
+Следующие НОВЫЕ пакеты будут установлены:
+  libaio1 libcgi-fast-perl libcgi-pm-perl libevent-core-2.1-7
+  libevent-pthreads-2.1-7 libfcgi-bin libfcgi-perl libfcgi0ldbl
+  libhtml-template-perl libmecab2 libprotobuf-lite23 mecab-ipadic
+  mecab-ipadic-utf8 mecab-utils mysql-client-8.0 mysql-client-core-8.0
+  mysql-common mysql-server mysql-server-8.0 mysql-server-core-8.0
+Обновлено 0 пакетов, установлено 20 новых пакетов, для удаления отмечено 0 пакетов, и 151 пакетов не обновлено.
+Необходимо скачать 29,3 MB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 242 MB.
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mysql-common all 5.8+1.0.8 [7 212 B]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-client-core-8.0 amd64 8.0.33-0ubuntu0.22.04.2 [2 802 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-client-8.0 amd64 8.0.33-0ubuntu0.22.04.2 [22,7 kB]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libaio1 amd64 0.3.112-13build1 [7 176 B]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libevent-core-2.1-7 amd64 2.1.12-stable-1build3 [93,9 kB]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libevent-pthreads-2.1-7 amd64 2.1.12-stable-1build3 [7 642 B]
+Пол:7 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libmecab2 amd64 0.996-14build9 [199 kB]
+Пол:8 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libprotobuf-lite23 amd64 3.12.4-1ubuntu7.22.04.1 [209 kB]
+Пол:9 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-server-core-8.0 amd64 8.0.33-0ubuntu0.22.04.2 [17,5 MB]
+Пол:10 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-server-8.0 amd64 8.0.33-0ubuntu0.22.04.2 [1 431 kB]
+Пол:11 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libcgi-pm-perl all 4.54-1 [188 kB]
+Пол:12 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libfcgi0ldbl amd64 2.4.2-2build2 [28,0 kB]
+Пол:13 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libfcgi-perl amd64 0.82+ds-1build1 [22,8 kB]
+Пол:14 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libcgi-fast-perl all 1:2.15-1 [10,5 kB]
+Пол:15 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libfcgi-bin amd64 2.4.2-2build2 [11,2 kB]
+Пол:16 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 libhtml-template-perl all 2.97-1.1 [59,1 kB]
+Пол:17 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-utils amd64 0.996-14build9 [4 850 B]
+Пол:18 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-ipadic all 2.7.0-20070801+main-3 [6 718 kB]
+Пол:19 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mecab-ipadic-utf8 all 2.7.0-20070801+main-3 [4 384 B]
+Пол:20 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-server all 8.0.33-0ubuntu0.22.04.2 [9 462 B]
+Получено 29,3 MB за 16с (1 827 kB/s)                                           
+Предварительная настройка пакетов …
+Выбор ранее не выбранного пакета mysql-common.
+(Чтение базы данных … на данный момент установлено 178818 файлов и каталогов.)
+Подготовка к распаковке …/0-mysql-common_5.8+1.0.8_all.deb …
+Распаковывается mysql-common (5.8+1.0.8) …
+Выбор ранее не выбранного пакета mysql-client-core-8.0.
+Подготовка к распаковке …/1-mysql-client-core-8.0_8.0.33-0ubuntu0.22.04.2_amd64.
+deb …
+Распаковывается mysql-client-core-8.0 (8.0.33-0ubuntu0.22.04.2) …
+Выбор ранее не выбранного пакета mysql-client-8.0.
+Подготовка к распаковке …/2-mysql-client-8.0_8.0.33-0ubuntu0.22.04.2_amd64.deb …
+Распаковывается mysql-client-8.0 (8.0.33-0ubuntu0.22.04.2) …
+Выбор ранее не выбранного пакета libaio1:amd64.
+Подготовка к распаковке …/3-libaio1_0.3.112-13build1_amd64.deb …
+Распаковывается libaio1:amd64 (0.3.112-13build1) …
+Выбор ранее не выбранного пакета libevent-core-2.1-7:amd64.
+Подготовка к распаковке …/4-libevent-core-2.1-7_2.1.12-stable-1build3_amd64.deb 
+…
+Распаковывается libevent-core-2.1-7:amd64 (2.1.12-stable-1build3) …
+Выбор ранее не выбранного пакета libevent-pthreads-2.1-7:amd64.
+Подготовка к распаковке …/5-libevent-pthreads-2.1-7_2.1.12-stable-1build3_amd64.
+deb …
+Распаковывается libevent-pthreads-2.1-7:amd64 (2.1.12-stable-1build3) …
+Выбор ранее не выбранного пакета libmecab2:amd64.
+Подготовка к распаковке …/6-libmecab2_0.996-14build9_amd64.deb …
+Распаковывается libmecab2:amd64 (0.996-14build9) …
+Выбор ранее не выбранного пакета libprotobuf-lite23:amd64.
+Подготовка к распаковке …/7-libprotobuf-lite23_3.12.4-1ubuntu7.22.04.1_amd64.deb
+ …
+Распаковывается libprotobuf-lite23:amd64 (3.12.4-1ubuntu7.22.04.1) …
+Выбор ранее не выбранного пакета mysql-server-core-8.0.
+Подготовка к распаковке …/8-mysql-server-core-8.0_8.0.33-0ubuntu0.22.04.2_amd64.
+deb …
+Распаковывается mysql-server-core-8.0 (8.0.33-0ubuntu0.22.04.2) …
+Настраивается пакет mysql-common (5.8+1.0.8) …
+update-alternatives: используется /etc/mysql/my.cnf.fallback для предоставления 
+/etc/mysql/my.cnf (my.cnf) в автоматическом режиме
+Выбор ранее не выбранного пакета mysql-server-8.0.
+(Чтение базы данных … на данный момент установлено 179042 файла и каталога.)
+Подготовка к распаковке …/00-mysql-server-8.0_8.0.33-0ubuntu0.22.04.2_amd64.deb 
+…
+Распаковывается mysql-server-8.0 (8.0.33-0ubuntu0.22.04.2) …
+Выбор ранее не выбранного пакета libcgi-pm-perl.
+Подготовка к распаковке …/01-libcgi-pm-perl_4.54-1_all.deb …
+Распаковывается libcgi-pm-perl (4.54-1) …
+Выбор ранее не выбранного пакета libfcgi0ldbl:amd64.
+Подготовка к распаковке …/02-libfcgi0ldbl_2.4.2-2build2_amd64.deb …
+Распаковывается libfcgi0ldbl:amd64 (2.4.2-2build2) …
+Выбор ранее не выбранного пакета libfcgi-perl:amd64.
+Подготовка к распаковке …/03-libfcgi-perl_0.82+ds-1build1_amd64.deb …
+Распаковывается libfcgi-perl:amd64 (0.82+ds-1build1) …
+Выбор ранее не выбранного пакета libcgi-fast-perl.
+Подготовка к распаковке …/04-libcgi-fast-perl_1%3a2.15-1_all.deb …
+Распаковывается libcgi-fast-perl (1:2.15-1) …
+Выбор ранее не выбранного пакета libfcgi-bin.
+Подготовка к распаковке …/05-libfcgi-bin_2.4.2-2build2_amd64.deb …
+Распаковывается libfcgi-bin (2.4.2-2build2) …
+Выбор ранее не выбранного пакета libhtml-template-perl.
+Подготовка к распаковке …/06-libhtml-template-perl_2.97-1.1_all.deb …
+Распаковывается libhtml-template-perl (2.97-1.1) …
+Выбор ранее не выбранного пакета mecab-utils.
+Подготовка к распаковке …/07-mecab-utils_0.996-14build9_amd64.deb …
+Распаковывается mecab-utils (0.996-14build9) …
+Выбор ранее не выбранного пакета mecab-ipadic.
+Подготовка к распаковке …/08-mecab-ipadic_2.7.0-20070801+main-3_all.deb …
+Распаковывается mecab-ipadic (2.7.0-20070801+main-3) …
+Выбор ранее не выбранного пакета mecab-ipadic-utf8.
+Подготовка к распаковке …/09-mecab-ipadic-utf8_2.7.0-20070801+main-3_all.deb …
+Распаковывается mecab-ipadic-utf8 (2.7.0-20070801+main-3) …
+Выбор ранее не выбранного пакета mysql-server.
+Подготовка к распаковке …/10-mysql-server_8.0.33-0ubuntu0.22.04.2_all.deb …
+Распаковывается mysql-server (8.0.33-0ubuntu0.22.04.2) …
+Настраивается пакет libmecab2:amd64 (0.996-14build9) …
+Настраивается пакет mysql-client-core-8.0 (8.0.33-0ubuntu0.22.04.2) …
+Настраивается пакет libfcgi0ldbl:amd64 (2.4.2-2build2) …
+Настраивается пакет libcgi-pm-perl (4.54-1) …
+Настраивается пакет libfcgi-bin (2.4.2-2build2) …
+Настраивается пакет libhtml-template-perl (2.97-1.1) …
+Настраивается пакет libprotobuf-lite23:amd64 (3.12.4-1ubuntu7.22.04.1) …
+Настраивается пакет mecab-utils (0.996-14build9) …
+Настраивается пакет libevent-core-2.1-7:amd64 (2.1.12-stable-1build3) …
+Настраивается пакет mysql-client-8.0 (8.0.33-0ubuntu0.22.04.2) …
+Настраивается пакет libfcgi-perl:amd64 (0.82+ds-1build1) …
+Настраивается пакет libaio1:amd64 (0.3.112-13build1) …
+Настраивается пакет libevent-pthreads-2.1-7:amd64 (2.1.12-stable-1build3) …
+Настраивается пакет mecab-ipadic (2.7.0-20070801+main-3) …
+Compiling IPA dictionary for Mecab.  This takes long time...
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+emitting double-array: 100% |###########################################| 
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+emitting double-array: 100% |###########################################| 
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+emitting matrix      : 100% |###########################################| 
+
+done!
+update-alternatives: используется /var/lib/mecab/dic/ipadic для предоставления /
+var/lib/mecab/dic/debian (mecab-dictionary) в автоматическом режиме
+Настраивается пакет libcgi-fast-perl (1:2.15-1) …
+Настраивается пакет mysql-server-core-8.0 (8.0.33-0ubuntu0.22.04.2) …
+Настраивается пакет mecab-ipadic-utf8 (2.7.0-20070801+main-3) …
+Compiling IPA dictionary for Mecab.  This takes long time...
+reading /usr/share/mecab/dic/ipadic/unk.def ... 40
+emitting double-array: 100% |###########################################| 
+/usr/share/mecab/dic/ipadic/model.def is not found. skipped.
+reading /usr/share/mecab/dic/ipadic/Noun.others.csv ... 151
+reading /usr/share/mecab/dic/ipadic/Filler.csv ... 19
+reading /usr/share/mecab/dic/ipadic/Noun.nai.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Noun.verbal.csv ... 12146
+reading /usr/share/mecab/dic/ipadic/Noun.demonst.csv ... 120
+reading /usr/share/mecab/dic/ipadic/Postp.csv ... 146
+reading /usr/share/mecab/dic/ipadic/Auxil.csv ... 199
+reading /usr/share/mecab/dic/ipadic/Noun.csv ... 60477
+reading /usr/share/mecab/dic/ipadic/Postp-col.csv ... 91
+reading /usr/share/mecab/dic/ipadic/Conjunction.csv ... 171
+reading /usr/share/mecab/dic/ipadic/Symbol.csv ... 208
+reading /usr/share/mecab/dic/ipadic/Adverb.csv ... 3032
+reading /usr/share/mecab/dic/ipadic/Others.csv ... 2
+reading /usr/share/mecab/dic/ipadic/Noun.number.csv ... 42
+reading /usr/share/mecab/dic/ipadic/Verb.csv ... 130750
+reading /usr/share/mecab/dic/ipadic/Prefix.csv ... 221
+reading /usr/share/mecab/dic/ipadic/Adj.csv ... 27210
+reading /usr/share/mecab/dic/ipadic/Adnominal.csv ... 135
+reading /usr/share/mecab/dic/ipadic/Noun.adjv.csv ... 3328
+reading /usr/share/mecab/dic/ipadic/Noun.adverbal.csv ... 795
+reading /usr/share/mecab/dic/ipadic/Noun.proper.csv ... 27328
+reading /usr/share/mecab/dic/ipadic/Noun.org.csv ... 16668
+reading /usr/share/mecab/dic/ipadic/Suffix.csv ... 1393
+reading /usr/share/mecab/dic/ipadic/Noun.place.csv ... 72999
+reading /usr/share/mecab/dic/ipadic/Noun.name.csv ... 34202
+reading /usr/share/mecab/dic/ipadic/Interjection.csv ... 252
+emitting double-array: 100% |###########################################| 
+reading /usr/share/mecab/dic/ipadic/matrix.def ... 1316x1316
+emitting matrix      : 100% |###########################################| 
+
+done!
+update-alternatives: используется /var/lib/mecab/dic/ipadic-utf8 для предоставле
+ния /var/lib/mecab/dic/debian (mecab-dictionary) в автоматическом режиме
+Настраивается пакет mysql-server-8.0 (8.0.33-0ubuntu0.22.04.2) …
+update-alternatives: используется /etc/mysql/mysql.cnf для предоставления /etc/m
+ysql/my.cnf (my.cnf) в автоматическом режиме
+Renaming removed key_buffer and myisam-recover options (if present)
+mysqld will log errors to /var/log/mysql/error.log
+mysqld is running as pid 13597
+Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /lib
+/systemd/system/mysql.service.
+Настраивается пакет mysql-server (8.0.33-0ubuntu0.22.04.2) …
+Обрабатываются триггеры для man-db (2.10.2-1) …
+Обрабатываются триггеры для libc-bin (2.35-0ubuntu3.1) …
+nikita@nikita-VirtualBox:/var/www/html$ cd
+nikita@nikita-VirtualBox:~$ sudo mysql -u root -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.33-0ubuntu0.22.04.2 (Ubuntu)
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database HW_7
+    -> show databases
+    -> create database HW_7;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show databases
+create database HW_7' at line 2
+mysql> create database HW_7
+    -> show databases
+    -> 
+    -> create table students(id INT, nave VARCHAR(100),tel INT);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show databases
+
+create table students(id INT, nave VARCHAR(100),tel INT)' at line 2
+mysql> exit
+Bye
+nikita@nikita-VirtualBox:~$ sudo apt install mysql-server -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Уже установлен пакет mysql-server самой новой версии (8.0.33-0ubuntu0.22.04.2).
+Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 151 пакетов не обновлено.
+nikita@nikita-VirtualBox:~$ sudo mysql -u root -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 8.0.33-0ubuntu0.22.04.2 (Ubuntu)
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
